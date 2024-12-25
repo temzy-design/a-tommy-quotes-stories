@@ -1,0 +1,295 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: rgb(58, 196, 45)716;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: hsl(241, 78%, 49%);
+    color: rgb(226, 12, 12);
+    padding: 15px 0;
+}
+
+.navbar .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.navbar nav {
+    float: right;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('superhero-bg.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: hsl(261, 100%, 28%);
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: hsl(0, 7%, 3%);
+    color: hsl(0, 100%, 55%);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: hsl(0, 94%, 34%);
+}
+
+/* Stories Section */
+.stories {
+    padding: 40px 20px;
+    background-color: rgb(9, 224, 9);
+    text-align: center;
+}
+
+.stories h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.story-card {
+    background-color: rgb(204, 33, 56);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px #b15a5a1a;
+    text-align: left;
+}
+
+.story-card img {)url(/superhero-bg.jpg)
+    width: 100%;
+    height: auto;
+}
+
+.story-card h3 {
+    font-size: 1.5em;
+    margin: 15px;
+}
+
+.story-card p {
+    font-size: 1em;
+    margin: 15px;
+}
+
+.story-card .read-more {
+    display: inline-block;
+    margin: 15px;
+    color: #ff5722;
+    text-decoration: none;
+}
+
+.story-card .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Categories Section */
+.categories {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.category-item {
+    background-color: #ff2222;
+    color: hsl(0, 4%, 14%);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.category-item:hover {
+    background-color: hsla(0, 0%, 3%, 0.973);
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    background-color: hwb(0 33% 15%);
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+/* Footer */
+.footer {
+    background-color: hwb(0 3% 37%);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comments-section {
+    margin: 40px 0;
+    text-align: center;
+}
+.comments-section textarea {
+    width: 90%;
+    max-width: 600px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.comments-section button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dark-mode-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #070505;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #000000;
+}
+.subscription-form {
+    text-align: center;
+    margin: 40px 0;
+}
+.subscription-form input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.subscription-form button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social-media {
+    text-align: center;
+    margin: 20px 0;
+}
+.social-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+.social-btn:hover {
+    background-color: #555;
+}
+.popular-stories {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+.story-list .story-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.story-list .story-item h3 {
+    font-size: 18px;
+}
+.story-list .story-item a {
+    color: #007BFF;
+    text-decoration: none;
+}
